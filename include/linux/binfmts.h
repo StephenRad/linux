@@ -19,7 +19,7 @@ struct linux_binprm {
 	struct vm_area_struct *vma;
 	unsigned long vma_pages;
 #else
-# define MAX_ARG_PAGES	32
+# define MAX_ARG_PAGES	256
 	struct page *page[MAX_ARG_PAGES];
 #endif
 	struct mm_struct *mm;
